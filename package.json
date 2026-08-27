@@ -1,0 +1,32 @@
+{
+  "name": "creative-portfolio",
+  "version": "1.0.0",
+  "description": "Creative Video Editor & Graphic Designer Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "next build"
+  },
+  "keywords": [
+    "portfolio",
+    "video-editor",
+    "graphic-designer"
+  ],
+  "author": "Akshay Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/nodemailer": "^8.0.1",
+    "framer-motion": "^13.1.1",
+    "nodemailer": "^9.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "next": "^16.3.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "typescript": "^7.0.2"
+  }
+}
