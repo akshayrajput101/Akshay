@@ -3332,6 +3332,7 @@ body.cursor-hover .cursor-text {
   position: relative;
   backdrop-filter: blur(15px);
   transition: var(--transition-med);
+  height: 100%;
 }
 
 .testimonial-card:hover {
@@ -3345,13 +3346,16 @@ body.cursor-hover .cursor-text {
   font-size: 0.95rem;
   display: flex;
   gap: 4px;
+  letter-spacing: 2px;
 }
 
 .testimonial-text {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-primary);
   line-height: 1.7;
   font-style: italic;
+  flex-grow: 1;
+  margin: 0;
 }
 
 .testimonial-client-row {
@@ -3360,13 +3364,15 @@ body.cursor-hover .cursor-text {
   gap: 14px;
   padding-top: 16px;
   border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
 }
 
 .client-avatar {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
   border-radius: 50%;
-  border: 1px solid var(--border-medium);
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
   object-fit: cover;
   background: #111;
 }
@@ -3374,6 +3380,7 @@ body.cursor-hover .cursor-text {
 .client-info-text {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 
 .client-name {
@@ -3381,12 +3388,14 @@ body.cursor-hover .cursor-text {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--gold-bright);
+  letter-spacing: 0.02em;
 }
 
 .client-role {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--text-muted);
+  line-height: 1.4;
 }
 
 /* --------------------------------------------------------------------------
@@ -3490,13 +3499,16 @@ body.cursor-hover .cursor-text {
 
 .contact-item-link {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
   padding: 16px 20px;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   transition: var(--transition-fast);
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-item-link:hover {
@@ -3508,6 +3520,8 @@ body.cursor-hover .cursor-text {
 .contact-icon-box {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  flex-shrink: 0;
   border-radius: 8px;
   background: rgba(230, 213, 184, 0.08);
   border: 1px solid var(--border-medium);
@@ -3516,11 +3530,17 @@ body.cursor-hover .cursor-text {
   justify-content: center;
   color: var(--gold-bright);
   font-size: 1.1rem;
+  margin-top: 2px;
 }
 
 .contact-item-text {
   display: flex;
   flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-item-label {
@@ -3536,6 +3556,17 @@ body.cursor-hover .cursor-text {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--gold-bright);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.45;
+}
+
+.address-value {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #f4f4f5;
+  font-weight: 500;
 }
 
 .social-links-row {
@@ -3732,6 +3763,35 @@ body.cursor-hover .cursor-text {
 .footer-links-list a:hover {
   color: var(--gold-bright);
   transform: translateX(4px);
+}
+
+.footer-address-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-subtle);
+  min-width: 0;
+}
+
+.footer-addr-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--gold-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.footer-addr-text {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .footer-bottom-row {
@@ -4354,5 +4414,25 @@ body.cursor-hover .cursor-text {
   }
   .modal-details-footer {
     grid-template-columns: 1fr;
+  }
+  .contact-item-link {
+    padding: 14px 14px;
+    gap: 12px;
+  }
+  .contact-icon-box {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 1rem;
+  }
+  .contact-item-value {
+    font-size: 0.85rem;
+  }
+  .address-value {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+  .footer-addr-text {
+    font-size: 0.74rem;
   }
 }
