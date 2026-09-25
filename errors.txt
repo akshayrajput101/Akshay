@@ -1,3 +1,4 @@
-All 132 HTML validation problems in index.html have been fixed.
+All HTML validation problems in index.html and public/index.html have been fixed.
 
 Validation status: PASS (0 errors, 0 warnings).
+Validated with html-validate and htmlhint.
