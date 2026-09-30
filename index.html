@@ -19,7 +19,7 @@
     rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=5.0">
+  <link rel="stylesheet" href="style.css?v=5.4">
 </head>
 
 <body>
@@ -1166,7 +1166,7 @@
           <span class="header-tag">04 // CURATED VIDEO REPERTOIRE (12 WORKS)</span>
           <h2 class="section-main-title">EDITED VIDEO <span class="gold-gradient-text">SHOWCASE</span></h2>
           <p class="section-desc-sub">Browse curated video projects across Short-Form Reels, YouTube Documentaries,
-            Commercials, Motion Graphics, and Cinematic Films. Click any item to launch the interactive Cinema Player.
+            Commercials, Motion Graphics, and Cinematic Films. Click any item to play inline with sound and full controls.
           </p>
         </div>
 
@@ -1662,56 +1662,7 @@
     </div>
   </footer>
 
-  <!-- ====================================================================
-       INTERACTIVE CINEMA VIDEO PLAYER MODAL
-       ==================================================================== -->
-  <div class="video-modal-backdrop" id="videoModalBackdrop" role="dialog" aria-modal="true">
-    <div class="video-modal-dialog">
-      <!-- Modal Top Bar -->
-      <div class="video-modal-top-bar">
-        <div class="modal-header-meta">
-          <span class="modal-category-tag" id="modalCategoryTag">Commercial</span>
-          <h3 class="modal-video-title" id="modalVideoTitle">Project Title</h3>
-        </div>
-        <button type="button" class="close-modal-btn" id="closeVideoModalBtn" aria-label="Close Video Modal">✕</button>
-      </div>
-
-      <!-- Modal Canvas Screen & Native Video Player -->
-      <div class="modal-video-screen">
-        <video id="modalVideoElement" class="modal-video-element" playsinline webkit-playsinline preload="metadata" loop></video>
-        <canvas id="modalVideoCanvas" class="modal-video-canvas"></canvas>
-
-        <!-- Click to Unmute Overlay -->
-        <button type="button" class="modal-unmute-overlay" id="modalUnmuteBtn" aria-label="Click to Unmute">
-          <span class="unmute-icon">🔊</span>
-          <span class="unmute-text">CLICK TO UNMUTE / SOUND ON</span>
-        </button>
-
-        <!-- Player Controls Bar -->
-        <div class="modal-player-controls">
-          <button type="button" class="player-btn-play" id="playerPlayBtn" aria-label="Play/Pause">❚❚</button>
-          <button type="button" class="player-btn-sound" id="playerSoundToggleBtn" aria-label="Mute / Unmute">🔊</button>
-          <div class="player-progress-bar" id="playerProgressBar">
-            <div class="player-progress-fill" id="playerProgressFill"></div>
-          </div>
-          <span class="player-time-display" id="playerTimeDisplay">00:00 / 00:45</span>
-        </div>
-      </div>
-
-      <!-- Modal Footer Specifications Grid -->
-      <div class="modal-details-footer">
-        <p class="modal-project-summary" id="modalProjectSummary">
-          Project breakdown and post-production summary details will appear here.
-        </p>
-        <div class="modal-specs-grid">
-          <span><strong>Software:</strong> <span id="modalSoftwareSpec">Premiere Pro, After Effects</span></span>
-          <span><strong>Format:</strong> <span id="modalResolutionSpec">4K UHD 60fps ProRes</span></span>
-          <span><strong>Color Grade:</strong> <span id="modalColorSpec">Custom Lumetri LUT</span></span>
-          <span><strong>Sound Design:</strong> <span id="modalSoundSpec">48-Track Mix</span></span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Modal Removed in favor of seamless inline video card playback -->
 
   <!-- Luxury Toast Notification -->
   <div class="luxury-toast" id="luxuryToast">
@@ -1720,7 +1671,7 @@
   </div>
 
   <!-- Script -->
-  <script src="script.js?v=5.0"></script>
+  <script src="script.js?v=5.4"></script>
 </body>
 
 </html>

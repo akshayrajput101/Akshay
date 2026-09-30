@@ -10,22 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const videoPortfolioData = [
     {
       id: 1,
-      title: "Viral Alex Hormozi Style High-Retention Reel",
+      title: "High-Retention Dynamic Visual Reel",
       category: "reels",
       categoryName: "Reels & Shorts (9:16)",
-      duration: "0:38",
-      views: "4.2M Views",
+      duration: "1:10",
+      views: "2.8M Views",
       aspect: "9:16 VERTICAL",
       isVertical: true,
-      client: "HyperScale Media",
-      videoSrc: "/first.mp4",
-      thumb: "/first.mp4",
-      desc: "Fast-paced short-form masterclass edit with kinetic animated typography, sound emojis, and retention-maximizing b-roll cuts.",
+      client: "Featured Creator",
+      videoSrc: "/six.mp4",
+      thumb: "/six.mp4",
+      desc: "Dynamic short-form showcase edit with kinetic animated typography, seamless visual transitions, and high-retention sound design.",
       specs: {
         software: "Premiere Pro, After Effects, CapCut Pro",
         resolution: "1080x1920 Vertical 60fps",
         colorGrade: "High-Contrast Vibrant Pop",
-        soundDesign: "Micro-SFX & Whoosh Syncing",
+        soundDesign: "Micro-SFX & Rhythm Syncing",
         turnaround: "24 Hours"
       }
     },
@@ -52,23 +52,23 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: 3,
-      title: "The Rise of Superintelligent AI Documentary Cut",
+      title: "Cinematic Narrative & Commercial Visual Cut",
       category: "youtube",
       categoryName: "YouTube Long-Form",
-      duration: "18:24",
-      views: "980K Views",
+      duration: "1:02",
+      views: "1.4M Views",
       aspect: "16:9 4K UHD",
       isVertical: false,
-      client: "Future Horizon (850K Subs)",
-      videoSrc: "/third.mp4",
-      thumb: "/third.mp4",
-      desc: "Documentary-style deep dive cut with seamless motion graphic chapters, archival footage restoration, and cinematic pacing.",
+      client: "Creative Partner",
+      videoSrc: "/seven.mp4",
+      thumb: "/seven.mp4",
+      desc: "Dynamic cinematic edit with seamless visual storytelling, stylized color grading, and custom audio sound design.",
       specs: {
-        software: "Premiere Pro, Photoshop, After Effects",
-        resolution: "4K UHD 24fps Cinema",
-        colorGrade: "Film Emulation Kodak 2383",
-        soundDesign: "Orchestral Score & Dialogue Mastering",
-        turnaround: "7 Days"
+        software: "Premiere Pro, After Effects, DaVinci Resolve",
+        resolution: "4K UHD 60fps",
+        colorGrade: "Film Emulation & Vibrant Pop",
+        soundDesign: "Custom Foley & Audio Mastering",
+        turnaround: "3 Days"
       }
     },
     {
@@ -115,62 +115,65 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: 6,
-      title: "Raw Power Fitness Motivation High-Energy Reel",
+      title: "Viral Alex Hormozi Style High-Retention Reel",
       category: "reels",
       categoryName: "Reels & Shorts (9:16)",
-      duration: "0:42",
-      views: "3.5M Views",
+      duration: "0:38",
+      views: "4.2M Views",
       aspect: "9:16 VERTICAL",
       isVertical: true,
-      client: "IronForge Athletics",
-      thumb: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=900&auto=format&fit=crop",
-      desc: "Adrenaline-fueled gym reel featuring speed ramping, beat matching, heavy bass drops, and aesthetic gym lighting grade.",
+      client: "HyperScale Media",
+      videoSrc: "/first.mp4",
+      thumb: "/first.mp4",
+      desc: "Fast-paced short-form masterclass edit with kinetic animated typography, sound emojis, and retention-maximizing b-roll cuts.",
       specs: {
-        software: "Premiere Pro, CapCut Pro",
-        resolution: "1080x1920 60fps",
-        colorGrade: "Dark Moody Gritty Warmth",
-        soundDesign: "Heavy Impact & Heartbeat SFX",
+        software: "Premiere Pro, After Effects, CapCut Pro",
+        resolution: "1080x1920 Vertical 60fps",
+        colorGrade: "High-Contrast Vibrant Pop",
+        soundDesign: "Micro-SFX & Whoosh Syncing",
         turnaround: "24 Hours"
       }
     },
     {
       id: 7,
-      title: "The $100M Creator Economy Deep Dive",
+      title: "The Rise of Superintelligent AI Documentary Cut",
       category: "youtube",
       categoryName: "YouTube Long-Form",
-      duration: "24:10",
-      views: "1.2M Views",
+      duration: "18:24",
+      views: "980K Views",
       aspect: "16:9 4K UHD",
       isVertical: false,
-      client: "Tech Insider Weekly",
-      thumb: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=900&auto=format&fit=crop",
-      desc: "Full long-form YouTube edit with 3D map animations, custom chart callouts, and audio leveling for maximum retention.",
+      client: "Future Horizon (850K Subs)",
+      videoSrc: "/third.mp4",
+      thumb: "/third.mp4",
+      desc: "Documentary-style deep dive cut with seamless motion graphic chapters, archival footage restoration, and cinematic pacing.",
       specs: {
-        software: "Premiere Pro, After Effects, Figma",
-        resolution: "4K UHD 30fps",
-        colorGrade: "Clean Studio Tech LUT",
-        soundDesign: "Stereo Dialogue Mastering & Ambient BGM",
-        turnaround: "6 Days"
+        software: "Premiere Pro, Photoshop, After Effects",
+        resolution: "4K UHD 24fps Cinema",
+        colorGrade: "Film Emulation Kodak 2383",
+        soundDesign: "Orchestral Score & Dialogue Mastering",
+        turnaround: "7 Days"
       }
     },
     {
       id: 8,
-      title: "Tokyo Midnight Drift Cinematic Film",
+      title: "Urban Velocity Cinematic Motion Reel",
       category: "cinematic",
       categoryName: "Cinematic & Music",
-      duration: "2:15",
-      views: "3.1M Views",
+      duration: "0:18",
+      views: "2.1M Views",
       aspect: "16:9 4K UHD",
       isVertical: false,
-      client: "Drift Syndicate Japan",
-      thumb: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=900&auto=format&fit=crop",
-      desc: "Cinematic night automotive film with anamorphic lens flares, wet asphalt reflections, and twin-turbo audio synthesis.",
+      client: "Vanguard Syndicate",
+      videoSrc: "/eight.mp4",
+      thumb: "/eight.mp4",
+      desc: "High-energy cinematic cut featuring dynamic night aesthetics, precision speed ramping, and immersive audio sound design.",
       specs: {
         software: "DaVinci Resolve Studio, Premiere Pro",
-        resolution: "4K Scope 2.39:1 24fps",
-        colorGrade: "Neon Night Teal/Red Film Emulation",
-        soundDesign: "Custom Engine & Exhaust Foley",
-        turnaround: "5 Days"
+        resolution: "4K DCI 60fps",
+        colorGrade: "Moody Neon Contrast & Film Emulation",
+        soundDesign: "Immersive Spatial SFX & Sound Design",
+        turnaround: "3 Days"
       }
     },
     {
@@ -446,24 +449,20 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="video-duration-pill">${video.duration}</span>
           <span class="video-views-badge">✦ ${video.views}</span>
         </div>
-        <div class="video-card-body">
-          <span class="video-category-tag">${video.categoryName}</span>
-          <h3 class="video-item-title">${video.title}</h3>
-          <p class="video-item-desc">${video.desc}</p>
-          <div class="video-card-bottom-row">
-            <span class="video-client-name">Client: ${video.client}</span>
-            <span class="video-watch-cta">Watch Edit →</span>
-          </div>
-        </div>
       `;
 
       if (isVideoMedia) {
         const videoElem = card.querySelector('video.video-thumb-media');
+        const playOverlay = card.querySelector('.video-hover-overlay');
+        const watchCta = card.querySelector('.video-watch-cta');
+        let isPlayingInline = false;
+
         if (videoElem) {
           videoElem.muted = true;
           videoElem.defaultMuted = true;
 
-          const safePlay = () => {
+          const safePlayPreview = () => {
+            if (isPlayingInline) return;
             videoElem.muted = true;
             const p = videoElem.play();
             if (p && typeof p.catch === 'function') {
@@ -476,24 +475,91 @@ document.addEventListener('DOMContentLoaded', () => {
             if (videoElem.currentTime < 0.1 && videoElem.duration > 0.5) {
               videoElem.currentTime = 0.35;
             }
-            safePlay();
+            safePlayPreview();
           }, { once: true });
 
-          videoElem.addEventListener('canplay', safePlay);
-          safePlay();
+          videoElem.addEventListener('canplay', safePlayPreview);
+          safePlayPreview();
 
           card.addEventListener('mouseenter', () => {
-            safePlay();
+            if (!isPlayingInline) safePlayPreview();
           });
 
           card.addEventListener('mouseleave', () => {
-            safePlay();
+            if (!isPlayingInline) safePlayPreview();
           });
+
+          // Inline Playback Logic:
+          // Unmutes, enables native controls, hides play overlay & thumbnail badges,
+          // and seamlessly continues video playback from current timestamp
+          const startInlinePlayback = (e) => {
+            if (e) e.stopPropagation();
+            if (isPlayingInline) return;
+
+            // Pause/mute any other inline video for optimal performance & clean audio
+            document.querySelectorAll('.video-card-item.is-playing-inline').forEach((otherCard) => {
+              if (otherCard !== card) {
+                const otherVid = otherCard.querySelector('video.video-thumb-media');
+                if (otherVid) {
+                  otherVid.controls = false;
+                  otherVid.muted = true;
+                }
+                otherCard.classList.remove('is-playing-inline');
+                const otherBtn = otherCard.querySelector('.video-watch-cta');
+                if (otherBtn) otherBtn.textContent = 'Watch Edit →';
+              }
+            });
+
+            // Reset video to the very beginning (0:00) for a fresh start with audio & controls
+            try {
+              videoElem.currentTime = 0;
+            } catch (err) {}
+
+            isPlayingInline = true;
+            card.classList.add('is-playing-inline');
+
+            // Unmute and enable native video controls
+            videoElem.muted = false;
+            videoElem.controls = true;
+
+            // Play smoothly from 0:00 with sound
+            const playPromise = videoElem.play();
+            if (playPromise !== undefined && playPromise !== null) {
+              playPromise.catch(() => {
+                // Safe fallback if browser security restricts unmuted autoplay
+                videoElem.muted = true;
+                videoElem.play().catch(() => {});
+              });
+            }
+
+            if (watchCta) {
+              watchCta.textContent = 'Playing Inline 🔊';
+            }
+          };
+
+          if (playOverlay) {
+            playOverlay.addEventListener('click', startInlinePlayback);
+            playOverlay.addEventListener('keydown', (e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                startInlinePlayback(e);
+              }
+            });
+          }
+
+          card.addEventListener('click', (e) => {
+            if (e.target && e.target.tagName && e.target.tagName.toLowerCase() === 'video' && isPlayingInline) return;
+            if (!isPlayingInline) {
+              startInlinePlayback(e);
+            }
+          });
+
+          if (watchCta) {
+            watchCta.addEventListener('click', startInlinePlayback);
+          }
         }
       }
 
-      // Touch & Click: Tapping card or Watch Edit CTA opens Cinema Player modal
-      card.addEventListener('click', () => openVideoModal(video));
       videoGrid.appendChild(card);
     });
 
@@ -503,6 +569,8 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((entry) => {
           const v = entry.target.querySelector('video.video-thumb-media');
           if (!v) return;
+          // If already playing inline with sound, don't interrupt or re-mute
+          if (entry.target.classList.contains('is-playing-inline')) return;
           if (entry.isIntersecting) {
             v.muted = true;
             const p = v.play();
@@ -537,337 +605,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --------------------------------------------------------------------------
-  // 6. Interactive Video Player Modal with Animated Canvas & Native Video Support
-  // --------------------------------------------------------------------------
-  const videoModal = document.getElementById('videoModalBackdrop');
-  const closeModalBtn = document.getElementById('closeVideoModalBtn');
-  const modalVideoCanvas = document.getElementById('modalVideoCanvas');
-  const modalVideoElem = document.getElementById('modalVideoElement');
-  const modalUnmuteBtn = document.getElementById('modalUnmuteBtn');
-  const playerSoundToggleBtn = document.getElementById('playerSoundToggleBtn');
-  const modalTitle = document.getElementById('modalVideoTitle');
-  const modalCat = document.getElementById('modalCategoryTag');
-  const modalDesc = document.getElementById('modalProjectSummary');
-  const modalSoftware = document.getElementById('modalSoftwareSpec');
-  const modalRes = document.getElementById('modalResolutionSpec');
-  const modalColor = document.getElementById('modalColorSpec');
-  const modalSound = document.getElementById('modalSoundSpec');
-  const playerPlayBtn = document.getElementById('playerPlayBtn');
-  const playerProgressBar = document.getElementById('playerProgressBar');
-  const playerProgressFill = document.getElementById('playerProgressFill');
-  const playerTimeDisplay = document.getElementById('playerTimeDisplay');
-
-  let isPlaying = false;
-  let animFrameId = null;
-  let currentVideoDurationSec = 45;
-  let currentPlaybackSec = 0;
-  let currentActiveVideo = null;
-
-  // Sound UI helper
-  const updateSoundUI = (isMuted) => {
-    if (modalUnmuteBtn) {
-      if (isMuted) {
-        modalUnmuteBtn.classList.remove('hidden');
-      } else {
-        modalUnmuteBtn.classList.add('hidden');
-      }
-    }
-    if (playerSoundToggleBtn) {
-      playerSoundToggleBtn.textContent = isMuted ? '🔇' : '🔊';
-      playerSoundToggleBtn.style.color = isMuted ? 'var(--text-muted)' : 'var(--gold-bright)';
-      playerSoundToggleBtn.title = isMuted ? 'Click to Unmute' : 'Click to Mute';
-    }
-  };
-
-  const toggleModalSound = () => {
-    if (!modalVideoElem) return;
-    try {
-      modalVideoElem.muted = !modalVideoElem.muted;
-      if (!modalVideoElem.muted) {
-        modalVideoElem.volume = 1.0;
-      }
-      updateSoundUI(modalVideoElem.muted);
-    } catch (err) {}
-  };
-
-  if (modalUnmuteBtn) {
-    modalUnmuteBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (modalVideoElem) {
-        try {
-          modalVideoElem.muted = false;
-          modalVideoElem.volume = 1.0;
-          const p = modalVideoElem.play();
-          if (p && typeof p.catch === 'function') p.catch(() => {});
-          updateSoundUI(false);
-        } catch (err) {}
-      }
-    });
-  }
-
-  if (playerSoundToggleBtn) {
-    playerSoundToggleBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      toggleModalSound();
-    });
-  }
-
-  // Open Video Modal
-  const openVideoModal = (video) => {
-    currentActiveVideo = video;
-    if (modalTitle) modalTitle.textContent = video.title;
-    if (modalCat) modalCat.textContent = video.categoryName;
-    if (modalDesc) modalDesc.textContent = video.desc;
-    if (modalSoftware) modalSoftware.textContent = video.specs.software;
-    if (modalRes) modalRes.textContent = video.specs.resolution;
-    if (modalColor) modalColor.textContent = video.specs.colorGrade;
-    if (modalSound) modalSound.textContent = video.specs.soundDesign;
-
-    // Convert mm:ss to seconds
-    const parts = video.duration.split(':').map(Number);
-    currentVideoDurationSec = parts.length === 2 ? parts[0] * 60 + parts[1] : 45;
-    currentPlaybackSec = 0;
-
-    if (videoModal) {
-      videoModal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    const hasRealVideo = Boolean(video.videoSrc || (video.thumb && video.thumb.endsWith('.mp4')));
-
-    if (hasRealVideo) {
-      if (modalVideoCanvas) modalVideoCanvas.style.display = 'none';
-      if (modalVideoElem) {
-        modalVideoElem.style.display = 'block';
-        const vSrc = video.videoSrc || (video.thumb.endsWith('.mp4') ? video.thumb : '');
-        modalVideoElem.src = vSrc;
-        modalVideoElem.removeAttribute('poster');
-        modalVideoElem.currentTime = 0;
-
-        // Try unmuted audio first (user gesture from card click)
-        try {
-          modalVideoElem.muted = false;
-          modalVideoElem.volume = 1.0;
-
-          const modalPlayPromise = modalVideoElem.play();
-          if (modalPlayPromise !== undefined && modalPlayPromise !== null) {
-            modalPlayPromise.then(() => {
-              updateSoundUI(false);
-            }).catch(() => {
-              // If browser blocks unmuted playback, fallback to muted with Unmute overlay
-              try {
-                modalVideoElem.muted = true;
-                const mutedPlayPromise = modalVideoElem.play();
-                if (mutedPlayPromise && typeof mutedPlayPromise.catch === 'function') {
-                  mutedPlayPromise.catch(() => {});
-                }
-                updateSoundUI(true);
-              } catch (e) {}
-            });
-          }
-        } catch (playErr) {
-          // Safe silent fallback
-        }
-
-        modalVideoElem.onloadedmetadata = () => {
-          if (modalVideoElem.duration && !isNaN(modalVideoElem.duration)) {
-            currentVideoDurationSec = modalVideoElem.duration;
-          }
-          updatePlaybackUI();
-        };
-        modalVideoElem.ontimeupdate = () => {
-          currentPlaybackSec = modalVideoElem.currentTime;
-          updatePlaybackUI();
-        };
-        modalVideoElem.onended = () => {
-          setIsPlaying(false);
-        };
-      }
-    } else {
-      if (modalVideoElem) {
-        modalVideoElem.pause();
-        modalVideoElem.src = '';
-        modalVideoElem.style.display = 'none';
-      }
-      if (modalUnmuteBtn) modalUnmuteBtn.classList.add('hidden');
-      if (modalVideoCanvas) modalVideoCanvas.style.display = 'block';
-      startCanvasSimulation(video);
-    }
-
-    setIsPlaying(true);
-  };
-
-  const closeVideoModal = () => {
-    if (videoModal) {
-      videoModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    if (modalVideoElem) {
-      modalVideoElem.pause();
-      modalVideoElem.src = '';
-      modalVideoElem.style.display = 'none';
-    }
-    if (modalUnmuteBtn) modalUnmuteBtn.classList.add('hidden');
-    setIsPlaying(false);
-    if (animFrameId) cancelAnimationFrame(animFrameId);
-  };
-
-  if (closeModalBtn) closeModalBtn.addEventListener('click', closeVideoModal);
-  if (videoModal) {
-    videoModal.addEventListener('click', (e) => {
-      if (e.target === videoModal) closeVideoModal();
-    });
-  }
-
-  // Play / Pause Simulation & Native Player Control
-  const setIsPlaying = (state) => {
-    isPlaying = state;
-    if (playerPlayBtn) {
-      playerPlayBtn.textContent = isPlaying ? '❚❚' : '▶';
-    }
-    if (modalVideoElem && modalVideoElem.style.display !== 'none') {
-      if (isPlaying) {
-        modalVideoElem.play().catch(() => {});
-      } else {
-        modalVideoElem.pause();
-      }
-    }
-  };
-
-  if (playerPlayBtn) {
-    playerPlayBtn.addEventListener('click', () => {
-      setIsPlaying(!isPlaying);
-    });
-  }
-
-  if (modalVideoElem) {
-    modalVideoElem.addEventListener('click', () => {
-      setIsPlaying(!isPlaying);
-    });
-  }
-
-  // Scrubber click
-  if (playerProgressBar) {
-    playerProgressBar.addEventListener('click', (e) => {
-      const rect = playerProgressBar.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      const pct = Math.max(0, Math.min(1, clickX / rect.width));
-      currentPlaybackSec = pct * currentVideoDurationSec;
-      if (modalVideoElem && modalVideoElem.style.display !== 'none') {
-        modalVideoElem.currentTime = currentPlaybackSec;
-      }
-      updatePlaybackUI();
-    });
-  }
-
-  const formatTime = (sec) => {
-    const m = Math.floor(sec / 60);
-    const s = Math.floor(sec % 60);
-    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-  };
-
-  const updatePlaybackUI = () => {
-    const pct = (currentPlaybackSec / currentVideoDurationSec) * 100;
-    if (playerProgressFill) playerProgressFill.style.width = `${pct}%`;
-    if (playerTimeDisplay) {
-      playerTimeDisplay.textContent = `${formatTime(currentPlaybackSec)} / ${formatTime(currentVideoDurationSec)}`;
-    }
-  };
-
-  // Canvas Cinema Simulator
-  const startCanvasSimulation = (video) => {
-    if (!modalVideoCanvas) return;
-    const ctx = modalVideoCanvas.getContext('2d');
-    modalVideoCanvas.width = 1280;
-    modalVideoCanvas.height = 720;
-
-    const bgImg = new Image();
-    bgImg.crossOrigin = "anonymous";
-    bgImg.src = video.thumb;
-
-    let tick = 0;
-
-    const drawFrame = () => {
-      tick++;
-
-      if (isPlaying) {
-        currentPlaybackSec += 1 / 60;
-        if (currentPlaybackSec >= currentVideoDurationSec) {
-          currentPlaybackSec = 0;
-        }
-      }
-      updatePlaybackUI();
-
-      ctx.fillStyle = '#060608';
-      ctx.fillRect(0, 0, 1280, 720);
-
-      // Draw background frame
-      if (bgImg.complete && bgImg.naturalWidth > 0) {
-        ctx.save();
-        const zoom = 1 + Math.sin(tick * 0.015) * 0.04;
-        ctx.translate(640, 360);
-        ctx.scale(zoom, zoom);
-        ctx.drawImage(bgImg, -640, -360, 1280, 720);
-        ctx.restore();
-      }
-
-      // Cinema Grade Vignette & Gold Lighting
-      const gradient = ctx.createRadialGradient(640, 360, 200, 640, 360, 750);
-      gradient.addColorStop(0, 'rgba(0,0,0,0.1)');
-      gradient.addColorStop(0.7, 'rgba(7,7,8,0.5)');
-      gradient.addColorStop(1, 'rgba(4,4,5,0.92)');
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, 1280, 720);
-
-      // Anamorphic Gold & Magenta Lens Streak
-      ctx.save();
-      const streakY = 360 + Math.sin(tick * 0.03) * 60;
-      const streakGrad = ctx.createLinearGradient(0, streakY - 8, 1280, streakY + 8);
-      streakGrad.addColorStop(0, 'transparent');
-      streakGrad.addColorStop(0.3, 'rgba(212, 175, 55, 0.15)');
-      streakGrad.addColorStop(0.5, 'rgba(244, 232, 211, 0.4)');
-      streakGrad.addColorStop(0.7, 'rgba(224, 40, 104, 0.2)');
-      streakGrad.addColorStop(1, 'transparent');
-      ctx.fillStyle = streakGrad;
-      ctx.fillRect(0, streakY - 3, 1280, 6);
-      ctx.restore();
-
-      // Film Scanlines
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.015)';
-      for (let y = 0; y < 720; y += 4) {
-        ctx.fillRect(0, y, 1280, 1);
-      }
-
-      // Audio Waveform Spectrum Overlay
-      ctx.fillStyle = 'rgba(212, 175, 55, 0.4)';
-      const bars = 48;
-      const barW = 8;
-      const spacing = 14;
-      const startX = 640 - (bars * spacing) / 2;
-
-      for (let i = 0; i < bars; i++) {
-        const height = isPlaying ? (Math.sin(tick * 0.1 + i * 0.3) * 0.5 + 0.5) * 45 + 5 : 6;
-        ctx.fillRect(startX + i * spacing, 630 - height, barW, height);
-      }
-
-      // Timecode watermark in video screen
-      ctx.font = '700 16px "Space Grotesk", monospace';
-      ctx.fillStyle = '#e6d5b8';
-      ctx.fillText(`REC  ●  ${formatTime(currentPlaybackSec)}:24  //  PRORES 422HQ`, 40, 50);
-
-      animFrameId = requestAnimationFrame(drawFrame);
-    };
-
-    if (animFrameId) cancelAnimationFrame(animFrameId);
-    drawFrame();
-  };
-
-  // Hero Watch Showreel button trigger
+  // Hero Watch Showreel button trigger -> Smooth scroll to showcase & play first reel inline
   const watchShowreelBtn = document.getElementById('heroWatchShowreelBtn');
   if (watchShowreelBtn) {
     watchShowreelBtn.addEventListener('click', () => {
-      openVideoModal(videoPortfolioData[0]);
+      const showcaseSection = document.getElementById('video-showcase');
+      if (showcaseSection) {
+        showcaseSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      const firstCardPlay = document.querySelector('.video-card-item .video-hover-overlay');
+      if (firstCardPlay) {
+        setTimeout(() => firstCardPlay.click(), 600);
+      }
     });
   }
 

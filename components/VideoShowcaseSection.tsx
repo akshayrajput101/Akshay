@@ -28,22 +28,22 @@ interface VideoItem {
 const VIDEO_ITEMS: VideoItem[] = [
   {
     id: 1,
-    title: 'Viral Alex Hormozi Style High-Retention Reel',
+    title: 'High-Retention Dynamic Visual Reel',
     category: 'reels',
     categoryName: 'Reels & Shorts (9:16)',
-    duration: '0:38',
-    views: '4.2M Views',
+    duration: '1:10',
+    views: '2.8M Views',
     aspect: '9:16 VERTICAL',
     isVertical: true,
-    client: 'HyperScale Media',
-    videoSrc: '/first.mp4',
-    thumb: '/first.mp4',
-    desc: 'Fast-paced short-form masterclass edit with kinetic animated typography, sound emojis, and retention-maximizing b-roll cuts.',
+    client: 'Featured Creator',
+    videoSrc: '/six.mp4',
+    thumb: '/six.mp4',
+    desc: 'Dynamic short-form showcase edit with kinetic animated typography, seamless visual transitions, and high-retention sound design.',
     specs: {
       software: 'Premiere Pro, After Effects, CapCut Pro',
       resolution: '1080x1920 Vertical 60fps',
       colorGrade: 'High-Contrast Vibrant Pop',
-      soundDesign: 'Micro-SFX & Whoosh Syncing',
+      soundDesign: 'Micro-SFX & Rhythm Syncing',
       turnaround: '24 Hours',
     },
   },
@@ -70,23 +70,23 @@ const VIDEO_ITEMS: VideoItem[] = [
   },
   {
     id: 3,
-    title: 'The Rise of Superintelligent AI Documentary Cut',
+    title: 'Cinematic Narrative & Commercial Visual Cut',
     category: 'youtube',
     categoryName: 'YouTube Long-Form',
-    duration: '18:24',
-    views: '980K Views',
+    duration: '1:02',
+    views: '1.4M Views',
     aspect: '16:9 4K UHD',
     isVertical: false,
-    client: 'Future Horizon (850K Subs)',
-    videoSrc: '/third.mp4',
-    thumb: '/third.mp4',
-    desc: 'Documentary-style deep dive cut with seamless motion graphic chapters, archival footage restoration, and cinematic pacing.',
+    client: 'Creative Partner',
+    videoSrc: '/seven.mp4',
+    thumb: '/seven.mp4',
+    desc: 'Dynamic cinematic edit with seamless visual storytelling, stylized color grading, and custom audio sound design.',
     specs: {
-      software: 'Premiere Pro, Photoshop, After Effects',
-      resolution: '4K UHD 24fps Cinema',
-      colorGrade: 'Film Emulation Kodak 2383',
-      soundDesign: 'Orchestral Score & Dialogue Mastering',
-      turnaround: '7 Days',
+      software: 'Premiere Pro, After Effects, DaVinci Resolve',
+      resolution: '4K UHD 60fps',
+      colorGrade: 'Film Emulation & Vibrant Pop',
+      soundDesign: 'Custom Foley & Audio Mastering',
+      turnaround: '3 Days',
     },
   },
   {
@@ -133,102 +133,207 @@ const VIDEO_ITEMS: VideoItem[] = [
   },
   {
     id: 6,
-    title: 'Raw Power Fitness Motivation High-Energy Reel',
+    title: 'Viral Alex Hormozi Style High-Retention Reel',
     category: 'reels',
     categoryName: 'Reels & Shorts (9:16)',
-    duration: '0:42',
-    views: '3.5M Views',
+    duration: '0:38',
+    views: '4.2M Views',
     aspect: '9:16 VERTICAL',
     isVertical: true,
-    client: 'IronForge Athletics',
+    client: 'HyperScale Media',
     videoSrc: '/first.mp4',
     thumb: '/first.mp4',
-    desc: 'Adrenaline-fueled gym reel featuring speed ramping, beat matching, heavy bass drops, and aesthetic gym lighting grade.',
+    desc: 'Fast-paced short-form masterclass edit with kinetic animated typography, sound emojis, and retention-maximizing b-roll cuts.',
     specs: {
-      software: 'Premiere Pro, CapCut Pro',
-      resolution: '1080x1920 60fps',
-      colorGrade: 'Dark Moody Gritty Warmth',
-      soundDesign: 'Heavy Impact & Heartbeat SFX',
+      software: 'Premiere Pro, After Effects, CapCut Pro',
+      resolution: '1080x1920 Vertical 60fps',
+      colorGrade: 'High-Contrast Vibrant Pop',
+      soundDesign: 'Micro-SFX & Whoosh Syncing',
       turnaround: '24 Hours',
+    },
+  },
+  {
+    id: 7,
+    title: 'The Rise of Superintelligent AI Documentary Cut',
+    category: 'youtube',
+    categoryName: 'YouTube Long-Form',
+    duration: '18:24',
+    views: '980K Views',
+    aspect: '16:9 4K UHD',
+    isVertical: false,
+    client: 'Future Horizon (850K Subs)',
+    videoSrc: '/third.mp4',
+    thumb: '/third.mp4',
+    desc: 'Documentary-style deep dive cut with seamless motion graphic chapters, archival footage restoration, and cinematic pacing.',
+    specs: {
+      software: 'Premiere Pro, Photoshop, After Effects',
+      resolution: '4K UHD 24fps Cinema',
+      colorGrade: 'Film Emulation Kodak 2383',
+      soundDesign: 'Orchestral Score & Dialogue Mastering',
+      turnaround: '7 Days',
+    },
+  },
+  {
+    id: 8,
+    title: 'Urban Velocity Cinematic Motion Reel',
+    category: 'cinematic',
+    categoryName: 'Cinematic & Music',
+    duration: '0:18',
+    views: '2.1M Views',
+    aspect: '16:9 4K UHD',
+    isVertical: false,
+    client: 'Vanguard Syndicate',
+    videoSrc: '/eight.mp4',
+    thumb: '/eight.mp4',
+    desc: 'High-energy cinematic cut featuring dynamic night aesthetics, precision speed ramping, and immersive audio sound design.',
+    specs: {
+      software: 'DaVinci Resolve Studio, Premiere Pro',
+      resolution: '4K DCI 60fps',
+      colorGrade: 'Moody Neon Contrast & Film Emulation',
+      soundDesign: 'Immersive Spatial SFX & Sound Design',
+      turnaround: '3 Days',
     },
   },
 ];
 
-export default function VideoShowcaseSection() {
-  const [selectedVideo, setSelectedVideo] = useState<VideoItem | null>(null);
-  const [isMuted, setIsMuted] = useState<boolean>(false);
-  const modalVideoRef = useRef<HTMLVideoElement>(null);
+interface VideoCardProps {
+  video: VideoItem;
+}
 
-  const handleCardMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
-    try {
-      const video = e.currentTarget.querySelector('video');
-      if (video) {
-        video.muted = true;
-        const promise = video.play();
-        if (promise !== undefined && promise !== null) {
-          promise.catch(() => {
-            // Safely ignore abort / programmatic play blocks
-          });
-        }
-      }
-    } catch {
-      // Safe catch
+function VideoCard({ video }: VideoCardProps) {
+  const [isPlayingInline, setIsPlayingInline] = useState<boolean>(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const isVideo = Boolean(video.videoSrc || (video.thumb && video.thumb.endsWith('.mp4')));
+  const videoSrcPath = video.videoSrc || video.thumb;
+
+  const handleStartInlinePlay = (e?: React.MouseEvent | React.KeyboardEvent) => {
+    if (e) {
+      e.stopPropagation();
     }
-  };
 
-  const handleCardMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    try {
-      const video = e.currentTarget.querySelector('video');
-      if (video) {
-        video.pause();
-        video.currentTime = 0;
-      }
-    } catch {
-      // Safe catch
+    // Reset video to the very beginning (0:00) for a fresh start with audio & controls
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.muted = false;
     }
-  };
 
-  const handleOpenModal = (video: VideoItem) => {
-    setSelectedVideo(video);
-    setIsMuted(false);
-    setTimeout(() => {
-      if (modalVideoRef.current) {
-        try {
-          modalVideoRef.current.currentTime = 0;
-          modalVideoRef.current.muted = false;
-          modalVideoRef.current.volume = 1.0;
-          const playPromise = modalVideoRef.current.play();
-          if (playPromise !== undefined && playPromise !== null) {
-            playPromise
-              .then(() => {
-                setIsMuted(false);
-              })
-              .catch(() => {
-                // If unmuted playback is blocked on mobile, fallback safely to muted
-                if (modalVideoRef.current) {
-                  modalVideoRef.current.muted = true;
-                  const mutedPromise = modalVideoRef.current.play();
-                  if (mutedPromise !== undefined && mutedPromise !== null) {
-                    mutedPromise.catch(() => {});
-                  }
-                  setIsMuted(true);
-                }
-              });
+    setIsPlayingInline(true);
+
+    if (videoRef.current) {
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined && playPromise !== null) {
+        playPromise.catch(() => {
+          // If browser policy restricts unmuted play without user gesture, fallback to muted
+          if (videoRef.current) {
+            videoRef.current.muted = true;
+            videoRef.current.play().catch(() => {});
           }
-        } catch {
-          // Safe catch
-        }
+        });
       }
-    }, 60);
-  };
-
-  const handleToggleMute = () => {
-    if (modalVideoRef.current) {
-      modalVideoRef.current.muted = !modalVideoRef.current.muted;
-      setIsMuted(modalVideoRef.current.muted);
     }
   };
 
+  const handleCardMouseEnter = () => {
+    if (isPlayingInline) return;
+    try {
+      if (videoRef.current) {
+        videoRef.current.muted = true;
+        const promise = videoRef.current.play();
+        if (promise !== undefined && promise !== null) {
+          promise.catch(() => {});
+        }
+      }
+    } catch {
+      // Safe catch
+    }
+  };
+
+  const handleCardMouseLeave = () => {
+    if (isPlayingInline) return;
+    try {
+      if (videoRef.current) {
+        // Safe preview maintenance
+      }
+    } catch {
+      // Safe catch
+    }
+  };
+
+  return (
+    <div
+      onClick={handleStartInlinePlay}
+      onMouseEnter={handleCardMouseEnter}
+      onMouseLeave={handleCardMouseLeave}
+      className={`group relative overflow-hidden rounded-2xl border bg-[#0e0e14]/70 backdrop-blur-md transition-all duration-500 cursor-pointer ${
+        isPlayingInline
+          ? 'border-[#d4af37] shadow-[0_20px_45px_rgba(0,0,0,0.95),0_0_30px_rgba(212,175,55,0.3)]'
+          : 'border-white/10 hover:border-[#d4af37]/50 hover:shadow-[0_20px_40px_rgba(0,0,0,0.9),0_0_25px_rgba(212,175,55,0.2),inset_0_1px_0_0_rgba(255,255,255,0.1)] hover:-translate-y-2'
+      }`}
+    >
+      {/* Video Container (Preserves strict aspect ratio bounds and responsive layout) */}
+      <div className="relative w-full aspect-[9/13] min-h-[380px] sm:min-h-[420px] overflow-hidden bg-gradient-to-br from-[#1c1c28] to-[#0c0c12] rounded-2xl">
+        {isVideo ? (
+          <video
+            ref={videoRef}
+            src={videoSrcPath}
+            autoPlay={true}
+            muted={!isPlayingInline}
+            loop={true}
+            controls={isPlayingInline}
+            playsInline
+            preload="auto"
+            className="absolute inset-0 h-full w-full object-cover object-center z-10 transition-transform duration-700 group-hover:scale-105"
+          />
+        ) : (
+          <img
+            src={video.thumb}
+            alt={video.title}
+            className="absolute inset-0 h-full w-full object-cover object-center z-10 transition-transform duration-700 group-hover:scale-105"
+          />
+        )}
+
+        {/* Large Play Button Overlay (Visible during Default/Preview state, Hidden during Inline Play) */}
+        {!isPlayingInline && (
+          <div
+            onClick={handleStartInlinePlay}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                handleStartInlinePlay(e);
+              }
+            }}
+            role="button"
+            tabIndex={0}
+            aria-label={`Play ${video.title} with sound`}
+            className="absolute inset-0 z-20 bg-black/30 hover:bg-black/40 transition-colors flex items-center justify-center cursor-pointer"
+          >
+            <div className="relative flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#d4af37] to-[#b38a22] text-black font-bold shadow-[0_8px_25px_rgba(0,0,0,0.8),0_0_20px_rgba(212,175,55,0.4)] transform transition-transform duration-300 group-hover:scale-110">
+              <span className="ml-1 text-lg sm:text-xl">▶</span>
+              <div className="absolute -inset-1.5 rounded-full border border-dashed border-[#e6d5b8]/50 animate-[spin_10s_linear_infinite]" />
+            </div>
+          </div>
+        )}
+
+        {/* Thumbnail Badges (Hidden when playing inline so controls aren't obstructed) */}
+        {!isPlayingInline && (
+          <>
+            <span className="absolute top-3 left-3 z-20 rounded-md bg-black/75 px-2.5 py-1 font-mono text-[10px] sm:text-[11px] font-bold text-[#d4af37] border border-white/10 backdrop-blur-md">
+              {video.aspect}
+            </span>
+            <span className="absolute bottom-3 right-3 z-20 rounded-md bg-black/75 px-2 py-1 font-mono text-[10px] text-white border border-white/10 backdrop-blur-md">
+              {video.duration}
+            </span>
+            <span className="absolute bottom-3 left-3 z-20 font-mono text-[11px] font-semibold text-[#d4af37] drop-shadow-md">
+              ✦ {video.views}
+            </span>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default function VideoShowcaseSection() {
   return (
     <section className="relative py-24 bg-[#0a0a0e]" id="video-showcase">
       <div className="container mx-auto px-4">
@@ -244,152 +349,16 @@ export default function VideoShowcaseSection() {
             </span>
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-300 md:text-base">
-            Browse curated video projects across Short-Form Reels, YouTube Documentaries, Commercials, Motion Graphics, and Cinematic Films. Click any item to launch the interactive Cinema Player.
+            Browse curated video projects across Short-Form Reels, YouTube Documentaries, Commercials, Motion Graphics, and Cinematic Films. Click any item to play inline with full controls.
           </p>
         </div>
 
         {/* Video Grid */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {VIDEO_ITEMS.map((video) => {
-            const isVideo = Boolean(video.videoSrc || (video.thumb && video.thumb.endsWith('.mp4')));
-            const videoSrcPath = video.videoSrc || video.thumb;
-
-            return (
-              <div
-                key={video.id}
-                onMouseEnter={handleCardMouseEnter}
-                onMouseLeave={handleCardMouseLeave}
-                onClick={() => handleOpenModal(video)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    handleOpenModal(video);
-                  }
-                }}
-                className="group relative cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-[#121218] transition-all duration-300 hover:border-[#d4af37]/60 hover:shadow-[0_15px_35px_rgba(0,0,0,0.8),0_0_25px_rgba(212,175,55,0.2)]"
-              >
-                <div className="relative w-full aspect-[9/13] h-[380px] overflow-hidden bg-gradient-to-br from-[#1c1c28] to-[#0c0c12] rounded-t-2xl">
-                  {isVideo ? (
-                    <video
-                      src={videoSrcPath}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="auto"
-                      className="absolute inset-0 h-full w-full object-cover object-center z-10 transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <img
-                      src={video.thumb}
-                      alt={video.title}
-                      className="absolute inset-0 h-full w-full object-cover object-center z-10 transition-transform duration-500 group-hover:scale-105"
-                    />
-                  )}
-                  <div className="absolute inset-0 z-20 bg-black/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center pointer-events-none">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#d4af37] text-black font-bold shadow-lg transform transition-transform group-hover:scale-110">
-                      ▶
-                    </span>
-                  </div>
-                  <span className="absolute top-3 left-3 z-20 rounded-md bg-black/70 px-2 py-1 font-mono text-[10px] text-white backdrop-blur-md">
-                    {video.aspect}
-                  </span>
-                  <span className="absolute bottom-3 right-3 z-20 rounded-md bg-black/70 px-2 py-1 font-mono text-[10px] text-[#d4af37] backdrop-blur-md">
-                    {video.duration}
-                  </span>
-                </div>
-
-                <div className="p-5">
-                  <span className="font-mono text-[11px] uppercase tracking-wider text-[#d4af37]">
-                    {video.categoryName}
-                  </span>
-                  <h3 className="mt-1 text-base font-bold text-white group-hover:text-[#d4af37] transition-colors">
-                    {video.title}
-                  </h3>
-                  <p className="mt-2 text-xs text-gray-400 line-clamp-2 leading-relaxed">
-                    {video.desc}
-                  </p>
-                  <div className="mt-4 flex items-center justify-between border-t border-white/5 pt-3">
-                    <span className="text-[11px] text-gray-400">Client: {video.client}</span>
-                    <span className="font-mono text-xs font-semibold text-[#d4af37] group-hover:underline">
-                      Watch Edit →
-                    </span>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+          {VIDEO_ITEMS.map((video) => (
+            <VideoCard key={video.id} video={video} />
+          ))}
         </div>
-
-        {/* Modal Cinema Player (Responsive & Viewport-Constrained) */}
-        {selectedVideo && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-3 sm:p-6 backdrop-blur-xl"
-            onClick={() => setSelectedVideo(null)}
-          >
-            <div
-              className="relative w-full max-w-5xl max-h-[85vh] flex flex-col overflow-y-auto rounded-2xl border border-white/10 bg-[#121218] shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Top Bar */}
-              <div className="sticky top-0 z-20 flex items-center justify-between border-b border-white/10 bg-[#121218]/95 px-5 py-3.5 backdrop-blur-md">
-                <div>
-                  <span className="font-mono text-xs text-[#d4af37]">{selectedVideo.categoryName}</span>
-                  <h3 className="text-base sm:text-lg font-bold text-white truncate max-w-[280px] sm:max-w-md md:max-w-lg">
-                    {selectedVideo.title}
-                  </h3>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setSelectedVideo(null)}
-                  className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-                >
-                  ✕
-                </button>
-              </div>
-
-              {/* Video Player Container */}
-              <div className="relative aspect-video max-h-[48vh] w-full bg-black flex items-center justify-center overflow-hidden">
-                <video
-                  ref={modalVideoRef}
-                  src={selectedVideo.videoSrc || selectedVideo.thumb}
-                  loop
-                  playsInline
-                  controls
-                  preload="auto"
-                  className="h-full w-full object-contain z-10"
-                />
-
-                {/* Click to Unmute banner */}
-                {isMuted && (
-                  <button
-                    type="button"
-                    onClick={handleToggleMute}
-                    className="absolute top-4 right-4 z-20 rounded-full border border-yellow-500/60 bg-black/80 px-3.5 py-1.5 font-mono text-[11px] sm:text-xs font-bold text-white backdrop-blur-md hover:bg-yellow-500/20 shadow-lg"
-                  >
-                    🔊 CLICK TO UNMUTE
-                  </button>
-                )}
-              </div>
-
-              {/* Modal Footer Specifications */}
-              <div className="p-4 sm:p-5 bg-[#0e0e14] border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="md:col-span-2">
-                  <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                    {selectedVideo.desc}
-                  </p>
-                </div>
-                <div className="flex flex-col gap-1 text-[11px] font-mono text-gray-400 border-t md:border-t-0 md:border-l border-white/5 pt-3 md:pt-0 md:pl-4">
-                  <div><strong className="text-[#d4af37]">Software:</strong> {selectedVideo.specs.software}</div>
-                  <div><strong className="text-[#d4af37]">Format:</strong> {selectedVideo.specs.resolution}</div>
-                  <div><strong className="text-[#d4af37]">Color:</strong> {selectedVideo.specs.colorGrade}</div>
-                  <div><strong className="text-[#d4af37]">Sound:</strong> {selectedVideo.specs.soundDesign}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );
